@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Bicycle - Components</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div class="sticky-header-wrapper">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="CD Bicycle Logo">
+            </div>
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" placeholder="SEARCH PRODUCTS">
+                    <button>🔍</button>
+                </div>
+                <button class="cart-button">
+                    🛒 CART
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </header>
+        
+        <nav class="nav-bar">
+            <a href="index.html">HOME</a>
+            <a href="bikes.html">BIKES & FRAMES</a>
+            <a href="components.html">COMPONENTS</a>
+            <a href="wear.html">WEAR</a>
+            <a href="about.html">ABOUT US</a>
+        </nav>
+    </div>
+    
+    <!-- Breadcrumb outside of sticky header -->
+    <div class="breadcrumb">
+        <a href="index.html">HOME</a> → <a href="bikes.html">BIKES & FRAMES</a> → <a href="#">KIDIE BIKE 1</a>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="index.html">HOME</a> → <a href="components.html">COMPONENTS</a>
+    </div>
+
+    <div class="main-content" style="display: flex;">
+        <aside class="sidebar">
+            <h3>SHOP BY</h3>
+            <ul class="category-list">
+                <li><a href="components.html" class="active">ALL COMPONENTS</a></li>
+                <li><a href="components.html?category=tubes">TUBES</a></li>
+                <li><a href="components.html?category=tyre">TYRE</a></li>
+                <li><a href="components.html?category=shocks">SHOCKS</a></li>
+            </ul>
+        </aside>
+
+        <div style="flex: 1; padding: 0 20px;">
+            <div class="content-header">
+                <h1 class="content-title">COMPONENTS</h1>
+                <div class="sort-by">
+                    <span>SORT BY</span>
+                    <select>
+                        <option>PRICE: LOW TO HIGH</option>
+                        <option>PRICE: HIGH TO LOW</option>
+                        <option>DATE: OLD TO NEW</option>
+                        <option>DATE: NEW TO OLD</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <a href="product-detail.html?product=tyre" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">TYRE</div>
+                </a>
+                <a href="product-detail.html?product=gianttube" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">GIANT TUBE</div>
+                </a>
+                <a href="product-detail.html?product=innertube" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">INNER TUBE</div>
+                </a>
+                <a href="product-detail.html?product=valve" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">VALVE</div>
+                </a>
+                <a href="product-detail.html?product=tyre2" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">TYRE 2</div>
+                </a>
+                <a href="product-detail.html?product=tyre3" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">TYRE 3</div>
+                </a>
+                <a href="product-detail.html?product=gianttire" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">GIANT TIRE</div>
+                </a>
+                <a href="product-detail.html?product=tubeless" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">TUBELESS</div>
+                </a>
+                <a href="product-detail.html?product=shock" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">SHOCK</div>
+                </a>
+                <a href="product-detail.html?product=brakepad" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">BRAKE PAD</div>
+                </a>
+                <a href="product-detail.html?product=chain" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">CHAIN</div>
+                </a>
+                <a href="product-detail.html?product=handlebar" class="product-card">
+                    <div class="product-image">150 × 150</div>
+                    <div class="product-name">HANDLEBAR</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Popup Modal -->
+    <div class="cart-popup-overlay" id="cartPopup" style="display: none;">
+        <div class="cart-popup">
+            <div class="cart-header">
+                SHOPPING CART
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">Subtotal ₱0.00</div>
+                <button class="checkout-btn">🛒 CHECK OUT</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="about.html">ABOUT US</a>
+        <a href="social.html">SOCIAL</a>
+        <div class="copyright">© 2025 CD BICYCLE</div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
